@@ -1,2 +1,7 @@
 <h5>Buscar:</h5>
-<input type="text" class="form-control" name="" id="" placeholder="buscar figs..">
+<input type="text" 
+    class="form-control" 
+    placeholder="buscar figs.."
+    (keyup.enter)="buscar()"
+    #txtBuscar
+>

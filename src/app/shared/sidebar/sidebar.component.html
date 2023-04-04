@@ -4,9 +4,13 @@
     </h3>
     <hr class="text-light">
     <div class="list-group list-reset">
-      <a href="#"
-      class="list-group-item list-group-item-action">
-        dashboard
+      <a 
+      *ngFor="let termino of historial"
+      (click)="buscar( termino )"
+      href="#"
+      class="list-group-item list-group-item-action"
+      >
+        {{ termino | titlecase }}
       </a>
     </div>
   </div>
